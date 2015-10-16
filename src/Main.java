@@ -73,6 +73,7 @@ public class Main {
             totalWins += winCount;
             totalLosses += loseCount;
 
+            //Potential Bug - game does not end unless user inputs q and submits. Game continues to run otherwise and does not end
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
