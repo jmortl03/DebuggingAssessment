@@ -42,7 +42,9 @@ public class Game {
 		int winnings = matches * bet;
 
 		if (matches > 0) {			
-			player.receiveWinnings(winnings);
+                      //bug 1 fixed, balance now increases
+                      player.returnBet(bet);
+                      player.receiveWinnings(winnings);
 		}
         return winnings;		
 	}
